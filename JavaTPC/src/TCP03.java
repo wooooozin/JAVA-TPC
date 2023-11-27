@@ -1,4 +1,5 @@
 import kr.bit.Book;
+import kr.bit.PersonVO;
 
 public class TCP03 {
 
@@ -19,8 +20,16 @@ public class TCP03 {
 		book.pages = 200;
 		
 		System.out.println(book); // kr.bit.Book@2a139a55, 주소를 출력
+		System.out.println(book.company);
 		
+		PersonVO person;
+		person = new PersonVO();
 		
+		person.name = "박루피";
+		
+		System.out.println(person.name); // 박루
+		System.out.println(person.age); // 0
+		System.out.println(person.height); // 0.0
 		
 	}
 
